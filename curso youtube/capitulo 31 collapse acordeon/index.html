@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+		 <script src="js/jquery-3.1.1.min.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
+	<style>
+		body{
+			position: relative;	
+		}
+		.seccion{
+			padding-top: 70px;
+		}
+
+	</style>
+			
+	</head>
+	<body data-spy="scroll" data-target="#navegacion">
+	
+			<div class="container">
+				<br>
+				<a href="#seccion" class="btn btn-primary" data-toggle="collapse">Mostrar</a>
+				<div class="collapse" id="seccion">
+					<br>
+					<div class="well"><!--parecido a un panel-->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ea necessitatibus quas qui id deserunt quisquam ut dolore, a sunt. Eligendi facere incidunt ea distinctio cupiditate veritatis eum. Nostrum, enim.</p>
+					</div>
+				</div>
+				<br>
+				<a href="#seccion2" class="btn-btn-primary" data-toggle="collapse">ver mensaje con well</a>
+
+				<div class="collapse" id="seccion2">
+					<br>
+				<div class="well">
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, est, id porro aspernatur mollitia ex laboriosam natus magnam ipsum, tempore sit labore vel! Voluptatibus autem velit esse quisquam vel fuga.
+					</p>
+				</div>
+				</div>
+
+
+				<br>
+				<br>
+				<div class="panel-group" id="acordeon">
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading1">
+								<h4 class="panel-title">
+								<a href="#collapse1" data-toggle="collapse" data-parent="#acordeon">
+									encabezado1
+								</a>
+								</h4>
+						</div>
+						<div class=" panel-collapse collapse " id="collapse1">
+						<div class="panel-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque itaque consequuntur facilis, ut debitis voluptates? Nihil, in consectetur tenetur ut distinctio ea vitae soluta optio eum illo voluptatum saepe maiores?
+							</p>
+						</div>
+						</div>
+					</div>
+
+
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading1">
+								<h4 class="panel-title">
+								<a href="#collapse2" data-toggle="collapse" data-parent="#acordeon">
+									encabezado2
+								</a>
+								</h4>
+						</div>
+						<div class="collapse  panel-collapse" id="collapse2">
+						<div class="panel-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque itaque consequuntur facilis, ut debitis voluptates? Nihil, in consectetur tenetur ut distinctio ea vitae soluta optio eum illo voluptatum saepe maiores?
+							</p>
+						</div>
+						</div>
+					</div>
+
+						<div class="panel panel-default">
+						<div class="panel-heading" id="heading1">
+								<h4 class="panel-title">
+								<a href="#collapse3" data-toggle="collapse" data-parent="#acordeon">
+									encabezado1
+								</a>
+								</h4>
+						</div>
+						<div class="collapse in panel-collapse" id="collapse3">
+						<div class="panel-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque itaque consequuntur facilis, ut debitis voluptates? Nihil, in consectetur tenetur ut distinctio ea vitae soluta optio eum illo voluptatum saepe maiores?
+							</p>
+						</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" >
+							<div class="panel-title">
+							<a href="#collapse4" data-toggle="collapse" data-parent="#acordeon">
+							encabezado
+							</a>
+							</div>
+						</div>
+						<div class="collapse panel-collapse" id="collapse4">
+						<div class="panel-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa, repudiandae quibusdam porro deleniti alias nihil provident voluptate sed praesentium, soluta! Animi, quod, eaque! Esse ut, quo nobis nesciunt officia.
+							</p>
+						</div>
+						</div>	
+
+					</div>
+
+				</div>
+			</div>
+	</body>
+
+</html>
+<!-- 
+	elemento padre es panel-grop sus hijos haran refrencia con data-parent(el link)
+	elemento siguiente panel<panel-heading,panel-body....... en el panel headin agregameos un enlace  con refrencia al id del div a mostrar(encierra panel-body) data-toggle(accion del click)
+	se encierra un div a la paner-body (la clase collapse indica si estara olapsado si agregamos in no estara collapasado) tiene un id="" sera quien refrencie el elemnto que lo collpasara(el link)
+
+-->
